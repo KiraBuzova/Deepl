@@ -1,0 +1,4 @@
+set,n_candidates,tables_equal,t_star_fast,t_star_brute,t_star_expected,passed
+A,6,True,0.4,0.4,0.4,True
+B,4,True,inf,inf,inf,True
+C,4,True,0.8,0.8,0.8,True
