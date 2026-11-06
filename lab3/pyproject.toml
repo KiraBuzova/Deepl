@@ -1,0 +1,14 @@
+[project]
+name = "lab3"
+version = "0.1.0"
+description = "ЛР3. Обчислювальний експеримент і трансферне навчання (ResNet-18, Intel Image Classification)"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "torch>=2.2",
+    "torchvision>=0.17",
+    "numpy>=1.26",
+    "scikit-learn>=1.4",
+    "matplotlib>=3.8",
+    "pillow>=10.2",
+]
