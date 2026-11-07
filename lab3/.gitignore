@@ -1,0 +1,12 @@
+# набір даних не додається до репозиторію
+archive/
+seg_train/
+seg_test/
+seg_pred/
+
+# локальні ваги окремих запусків (до репозиторію йде лише lab3_model.pt)
+runs/*/model.pt
+
+.venv/
+__pycache__/
+*.pyc
