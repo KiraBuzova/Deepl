@@ -1,0 +1,172 @@
+{
+  "split_sha256": "8407b14dde8eca5816a9f3e34347be54ea19c4a9a35163cb2bf7507a045279d9",
+  "runs": {
+    "scratch_seed1": {
+      "final_train_loss": 0.9625298198064168,
+      "final_val_macro_f1": 0.6000213690557691,
+      "train_time_seconds": 410.0265148000326
+    },
+    "frozen_seed1": {
+      "final_train_loss": 0.17585405066609383,
+      "final_val_macro_f1": 0.8829264959685504,
+      "train_time_seconds": 205.60947160003707
+    },
+    "frozen_seed2": {
+      "final_train_loss": 0.18484775960445404,
+      "final_val_macro_f1": 0.8813500703928338,
+      "train_time_seconds": 248.83031029999256
+    },
+    "frozen_seed3": {
+      "final_train_loss": 0.1787981280684471,
+      "final_val_macro_f1": 0.8864172614944515,
+      "train_time_seconds": 213.1761089999345
+    },
+    "unfreeze_seed1": {
+      "final_train_loss": 0.08793006851027409,
+      "final_val_macro_f1": 0.8835828087303267,
+      "train_time_seconds": 320.8916982000228
+    },
+    "unfreeze_seed2": {
+      "final_train_loss": 0.045446088990817465,
+      "final_val_macro_f1": 0.8933022132913142,
+      "train_time_seconds": 328.5383630998549
+    },
+    "unfreeze_seed3": {
+      "final_train_loss": 0.06874234778185685,
+      "final_val_macro_f1": 0.889275928989235,
+      "train_time_seconds": 303.27976169995964
+    }
+  },
+  "effects": {
+    "F_scratch": 0.6000213690557691,
+    "Fbar_frozen": 0.8835646092852786,
+    "Fbar_unfreeze": 0.8887203170036253,
+    "R_frozen": 0.005067191101617796,
+    "R_unfreeze": 0.009719404560987521,
+    "R": 0.009719404560987521,
+    "delta_pre": 0.2835432402295095,
+    "delta_unf": 0.005155707718346725,
+    "delta_total": 0.2886989479478562,
+    "verdict_pre": "ефект вартий перевірки, але не доведений",
+    "verdict_unf": "не відрізняється від розкиду: результату немає"
+  },
+  "regime_means": {
+    "scratch": 0.6000213690557691,
+    "frozen": 0.8835646092852786,
+    "unfreeze": 0.8887203170036253
+  },
+  "selected": {
+    "regime": "unfreeze",
+    "seed": 2,
+    "val_macro_f1": 0.8933022132913142,
+    "noise_decided_selection": true
+  },
+  "test": {
+    "macro_f1": 0.8968388442877616,
+    "accuracy": 0.8954727030625832,
+    "n": 1502,
+    "se_accuracy": 0.007894162633448727,
+    "confusion_matrix": [
+      [
+        184,
+        0,
+        0,
+        3,
+        2,
+        30
+      ],
+      [
+        0,
+        234,
+        1,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        227,
+        38,
+        11,
+        0
+      ],
+      [
+        0,
+        0,
+        32,
+        224,
+        6,
+        1
+      ],
+      [
+        1,
+        1,
+        3,
+        5,
+        245,
+        0
+      ],
+      [
+        17,
+        0,
+        1,
+        1,
+        1,
+        231
+      ]
+    ],
+    "top_errors": [
+      {
+        "file": "20179.jpg",
+        "true": 2,
+        "pred": 3,
+        "prob": 0.8037289068352345,
+        "count": 38,
+        "index": 459,
+        "true_name": "glacier",
+        "pred_name": "mountain"
+      },
+      {
+        "file": "20116.jpg",
+        "true": 3,
+        "pred": 2,
+        "prob": 0.7940312139656717,
+        "count": 32,
+        "index": 738,
+        "true_name": "mountain",
+        "pred_name": "glacier"
+      },
+      {
+        "file": "20246.jpg",
+        "true": 0,
+        "pred": 5,
+        "prob": 0.9921497730770437,
+        "count": 30,
+        "index": 11,
+        "true_name": "buildings",
+        "pred_name": "street"
+      },
+      {
+        "file": "20234.jpg",
+        "true": 5,
+        "pred": 0,
+        "prob": 0.9783163018202383,
+        "count": 17,
+        "index": 1264,
+        "true_name": "street",
+        "pred_name": "buildings"
+      },
+      {
+        "file": "20383.jpg",
+        "true": 2,
+        "pred": 4,
+        "prob": 0.7928130708304041,
+        "count": 11,
+        "index": 475,
+        "true_name": "glacier",
+        "pred_name": "sea"
+      }
+    ]
+  }
+}
