@@ -1,0 +1,19 @@
+[project]
+name = "lab4"
+version = "0.1.0"
+description = "ЛР4. FP32 проти INT8"
+requires-python = "==3.12.*"
+# Після `uv lock` зафіксуйте в uv.lock точні версії; за потреби вкажіть тут "==" для ключових пакетів.
+# Для CPU-збірки torch/torchvision скопіюйте секції [tool.uv.sources]/[[tool.uv.index]] з lab3/pyproject.toml.
+dependencies = [
+    "torch",
+    "torchvision",
+    "onnx",
+    "onnxruntime",
+    "numpy",
+    "scikit-learn",
+    "pillow",
+]
+
+[tool.uv]
+package = false
